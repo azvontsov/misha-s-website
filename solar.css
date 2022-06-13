@@ -542,18 +542,32 @@ body {
   box-shadow: inset 0 6px 0 -2px rgba(0, 0, 0, 0.25);
 }
 .rocket {
-  height: 545px;
-  width: 145px;
-  margin-top: -72.5px;
-  margin-left: -72.5px;
-  -webkit-animation: orb 30s linear infinite;
-  animation: orb 30s linear infinite;
+  height: 880px;
+  width: 880px;
+  margin-top: -100px;
+  margin-left: -350px;
+  -webkit-animation: orb 40.6952471456s linear infinite;
+  animation: orb 40.6952471456s linear infinite;
 }
-.rocket:before {
-  height: 4px;
-  width: 12px;
-  background: red;
+.rocket:after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  top: 3px;
+  -webkit-animation: orb 882.6952471456s linear infinite;
+  animation: orb 882.6952471456s linear infinite;
+  animation-direction: reverse;
+  transform-origin: 52% 60%;
 }
+.rocket-img {
+  height: 50px;
+  width: 50px;
+  transform: translate(1100%, 50%) rotate(-80deg);
+  margin-left: -3%;
+}
+
 .sun {
   /* background: radial-gradient(
     ellipse at center,
