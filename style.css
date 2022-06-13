@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
@@ -35,14 +34,7 @@ html {
 
 #logo {
   height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: -0.05em;
-  /* text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); */
-  text-decoration: none;
   z-index: 10;
-  position: relative;
 }
 
 #logo:hover {
@@ -58,7 +50,6 @@ html {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, #708090, #008080, #f6ae2d, #e9c3b8);
-  /* box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); */
   transition: transform 0.3s ease-in-out;
   transform-origin: right;
   transform: scaleX(0);
@@ -82,8 +73,8 @@ html {
   color: #f5f5f5;
   text-decoration: none;
   /* font-size: 2.25rem; */
-  font-size: clamp(1.5rem, 8vw + 1rem, 1.5rem);
-  /* text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); */
+  font-size: clamp(1.8rem, 8vw + 1rem, 1.8rem);
+
   margin: 1.2rem;
   margin-right: 0;
   cursor: pointer;
@@ -302,6 +293,8 @@ html {
   height: 400px;
   width: 50%;
 }
+
+/*+++++++++++++++++++++ @media +++++++++++++++++++++  */
 
 @media screen and (max-width: 768px) {
   .navbar {
