@@ -548,6 +548,7 @@ body {
   margin-left: -350px;
   -webkit-animation: orb 20.6952471456s linear infinite;
   animation: orb 20.6952471456s linear infinite;
+  z-index: 100;
 }
 .rocket:after {
   position: absolute;

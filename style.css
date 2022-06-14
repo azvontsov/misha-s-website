@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fresca&display=swap");
 
 * {
   margin: 0;
@@ -101,6 +102,16 @@ html {
 .menu-link:hover:after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  #logo {
+    height: 80px;
+    margin-bottom: 1rem;
+  }
 }
 
 /*+++++++++++++++++++++ Landing +++++++++++++++++++++  */
@@ -236,7 +247,7 @@ html {
 .grid-item-header {
   display: block;
   font-size: 2rem;
-  font-family: "Courier Prime", monospace;
+  font-family: "Fresca", sans-serif;
   font-weight: 400;
   color: #fff;
   line-height: 2rem;
@@ -246,17 +257,17 @@ html {
   text-align: center;
 }
 .paragraph {
-  margin: 10px auto 0.65em;
+  margin: 5px auto 0.65em;
   line-height: 1.75rem;
   text-align: left;
-  font-size: 1rem;
-  font-family: "Courier Prime", monospace;
+  font-size: 1.5rem;
+  font-family: "Fresca", sans-serif;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item {
-  min-height: 400px;
+  min-height: 300px;
   width: 100%;
   position: relative;
   display: flex;
@@ -266,42 +277,294 @@ html {
 }
 
 .image1 {
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654873098/1_yxyuzv.png);
+  background: rgb(178, 67, 67);
+  background-image: url(https://reyuzv.png);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 50%;
+  height: 300px;
+  width: 25%;
 }
 .image2 {
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654873081/Untitled_Artwork_24_pzq9ns.jpg);
+  background: rgb(77, 66, 136);
+  background-image: url(https://reyuzv.png);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 50%;
+  height: 300px;
+  width: 25%;
 }
 .image3 {
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654873075/Untitled_Artwork_22_xehsjc.jpg);
+  background: rgb(115, 147, 88);
+  background-image: url(https://reyuzv.png);
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 50%;
+  height: 300px;
+  width: 25%;
 }
 .image4 {
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654895279/Untitled_Artwork_10_pg5y7f.jpg);
+  background: rgb(131, 18, 148);
+  background-image: url(https://reyuzv.png);
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 300px;
+  width: 25%;
+}
+.image5 {
+  background: rgb(119, 92, 123);
+  background-image: url(https://reyuzv.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image6 {
+  background: rgb(47, 179, 181);
+  background-image: url(https://reyuzv.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image7 {
+  background: rgb(186, 228, 34);
+  background-image: url(https://reyuzv.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image8 {
+  background: rgb(162, 65, 45);
+  background-image: url(https://reyuzv.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .section-header {
+    font-size: 5rem;
+  }
+}
+
+/*+++++++++++++++++++++ ANIMATION +++++++++++++++++++++  */
+
+.video1 {
+  width: 100%;
+}
+
+/*+++++++++++++++++++++ ABOUT +++++++++++++++++++++  */
+
+.about-color {
+  background-color: #602e68;
+  border: none;
+}
+
+.about-items {
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about1,
+.about2 {
+  height: 500px;
   width: 50%;
+}
+
+.about2 {
+  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1655156178/misha_a9bgfu.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-links {
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  line-height: 2rem;
+  position: relative;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.line {
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 100px;
+  margin: 30px auto 15px;
+  background-color: #fff;
+}
+
+.line-color-change {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .about-links {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    line-height: 1.45;
+  }
+}
+
+/*+++++++++++++++++++++ CONTACT +++++++++++++++++++++  */
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.contact .contactForm {
+  position: relative;
+  width: 700px;
+}
+.contact .contactForm .row {
+  width: 100%;
+  display: flex;
+}
+.contact .contactForm .row .col50 {
+  width: 50%;
+  margin: 10px;
+}
+.contact .contactForm .row .col100 {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+.contact .contactForm .row input,
+.contact .contactForm .row textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+  font-family: "Fresca", sans-serif;
+}
+.contact .contactForm .row textarea {
+  height: 100px;
+}
+.contact .contactForm .row input[type="submit"] {
+  background: #f6ae2d;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 150px;
 }
 
 /*+++++++++++++++++++++ @media +++++++++++++++++++++  */
 
+@media screen and (max-width: 991px) {
+  .contact-links {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    line-height: 1.45;
+  }
+}
 @media screen and (max-width: 768px) {
-  .navbar {
+  /* Navigation */
+
+  .menu-link {
+    font-size: 1.8rem;
+  }
+
+  /* About  */
+
+  .about1,
+  .about2 {
+    width: 100%;
+  }
+
+  .grid-item {
+    padding: 70px;
+  }
+
+  .gallery-item {
     flex-direction: column;
   }
-  #logo {
-    height: 80px;
-    margin-bottom: 1rem;
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7,
+  .image8 {
+    width: 100%;
+  }
+
+  .image1 {
+    background-position-y: 30%;
+  }
+
+  /* Contact */
+
+  .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact .contactForm .row textarea {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    padding: 10px;
+  }
+  /* About */
+
+  .grid-item {
+    padding: 50px;
+  }
+
+  .section-header {
+    font-size: 5rem;
+    padding-top: 1rem;
+  }
+
+  .grid-item-header {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 0.875rem;
+  }
+
+  /* About */
+  .about-items {
+    flex-direction: column;
+  }
+  .about-links {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .paragraph {
+    font-size: 1.25rem;
   }
 }

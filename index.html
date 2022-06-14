@@ -30,6 +30,9 @@
       </div>
       <ul class="nav-links">
         <li>
+          <a onclick="scrollSmoothTo('about')" class="menu-link">About</a>
+        </li>
+        <li>
           <a onclick="scrollSmoothTo('drawings')" class="menu-link">Drawings</a>
         </li>
         <li>
@@ -38,14 +41,16 @@
           >
         </li>
         <li>
-          <a onclick="scrollSmoothTo('about')" class="menu-link">About</a>
-        </li>
-        <li>
           <a onclick="scrollSmoothTo('contact')" class="menu-link">Contact</a>
         </li>
       </ul>
     </nav>
-    <div class="banner">
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      class="banner"
+    >
       <div class="solar-syst">
         <div class="rocket">
           <img
@@ -76,6 +81,8 @@
       </div>
     </div>
 
+    <!--------------------------- DRAWINGS ------------------------------>
+
     <div class="section">
       <h2 id="drawings" class="section-header">Drawings</h2>
       <div
@@ -103,6 +110,8 @@
       >
         <div class="image1"></div>
         <div class="image2"></div>
+        <div class="image3"></div>
+        <div class="image4"></div>
       </div>
       <div
         data-aos="fade-right"
@@ -111,11 +120,167 @@
         data-aos-delay="300"
         class="gallery-item"
       >
-        <div class="image3"></div>
-        <div class="image4"></div>
+        <div class="image5"></div>
+        <div class="image6"></div>
+        <div class="image7"></div>
+        <div class="image8"></div>
       </div>
+    </div>
+
+    <!--------------------------- VIDEO ------------------------------>
+
+    <div class="section">
+      <h2 id="animation" class="section-header">Animation</h2>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        class="grid-item"
+      >
+        <h3 class="grid-item-header">Video.</h3>
+        <div class="line"></div>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione
+          a voluptate asperiores assumenda quasi quo quisquam, natus
+          voluptatibus impedit. Earum impedit ipsam eos alias quia vero sed at
+          consequatur?
+        </p>
+      </div>
+
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        data-aos-delay="300"
+        class="gallery-item"
+      >
+        <video
+          class="video1"
+          controls
+          autoplay
+          loop
+          muted
+          src="https://res.cloudinary.com/antonjs/video/upload/v1655152510/misha_ucutvz.mov"
+        ></video>
+      </div>
+    </div>
+
+    <!--------------------------- ABOUT ------------------------------>
+
+    <div class="section">
+      <h2 id="about" class="section-header">About.</h2>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        class="about-items"
+      >
+        <div class="about1 grid-item about-color">
+          <p class="paragraph color-change">
+            I love to draw and create characters. Drop me a line and say hello!
+          </p>
+          <div class="line line-color-change"></div>
+          <h3 class="grid-item-header color-change">
+            <a
+              href="mailto:polina.design@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about-links color-change"
+              >polina.design@gmail.com</a
+            >
+          </h3>
+          <div class="icon-wrapper">
+            <a
+              href="https://drive.google.com/file/d/14MDIXyuijozX5CTDAoZ5ZjqIsi0iNa9T/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fas fa-file fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/gore-sometimes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a
+              href="https://github.com/GSometimes"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github-square fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="about2"></div>
+      </div>
+    </div>
+
+    <!--------------------------- CONTACT ------------------------------>
+
+    <div class="section">
+      <h2 id="contact" class="section-header">Contact.</h2>
+    </div>
+    <div class="contact" id="contact">
+      <form action="https://formsubmit.co/azvontsov@gmail.com" method="POST">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          class="contactForm"
+        >
+          <div class="row">
+            <div class="col50">
+              <input
+                type="text"
+                name="First Name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+
+            <div class="col50">
+              <input
+                type="text"
+                name="Last Name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col50">
+              <input type="text" name="email" placeholder="Email" required />
+            </div>
+
+            <div class="col50">
+              <input
+                type="text"
+                name="Mobile No."
+                placeholder="Mobile No."
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col100">
+              <textarea
+                placeholder="Message"
+                name="Message"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col100">
+              <input type="submit" value="Send" />
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script src="anime.min.js"></script>
   </body>
 </html>

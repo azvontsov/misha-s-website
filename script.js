@@ -7,3 +7,12 @@ function scrollSmoothTo(elementId) {
     behavior: "smooth",
   });
 }
+
+let animation = anime.timeline({});
+
+animation.add({
+  targets: "#solar",
+  top: "100px",
+  duration: 500,
+  easing: "easeInOutSine",
+});
