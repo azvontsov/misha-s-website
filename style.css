@@ -291,16 +291,17 @@ html {
 }
 .image1 {
   background: rgb(178, 67, 67);
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654873098/1_yxyuzv.png);
+  background-image: url("./images/selected/1.png");
   background-size: cover;
-  background-position: center;
+  /* object-fit: contain; */
+  /* background-position: center; */
   height: 300px;
   width: 25%;
 }
 
 .image2 {
   background: rgb(77, 66, 136);
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654873075/Untitled_Artwork_22_xehsjc.jpg);
+  background-image: url("./images/selected/2.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -308,7 +309,7 @@ html {
 }
 .image3 {
   background: rgb(115, 147, 88);
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654873081/Untitled_Artwork_24_pzq9ns.jpg);
+  background-image: url("./images/selected/3.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -316,7 +317,7 @@ html {
 }
 .image4 {
   background: rgb(131, 18, 148);
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654873869/Untitled_Artwork_23_tnugxe.jpg);
+  background-image: url("./images/selected/4.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -324,7 +325,7 @@ html {
 }
 .image5 {
   background: rgb(119, 92, 123);
-  background-image: url(https://reyuzv.png);
+  background-image: url("./images/selected/5.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -332,7 +333,7 @@ html {
 }
 .image6 {
   background: rgb(47, 179, 181);
-  background-image: url(https://reyuzv.png);
+  background-image: url("./images/selected/6.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -340,7 +341,7 @@ html {
 }
 .image7 {
   background: rgb(186, 228, 34);
-  background-image: url(https://reyuzv.png);
+  background-image: url("./images/selected/7.png");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -348,11 +349,131 @@ html {
 }
 .image8 {
   background: rgb(162, 65, 45);
-  background-image: url(https://reyuzv.png);
+  background-image: url("./images/selected/8.png");
   background-size: cover;
   background-position: center;
   height: 300px;
   width: 25%;
+}
+.image9 {
+  background: rgb(178, 67, 67);
+  background-image: url("./images/selected/9.png");
+  background-size: cover;
+  height: 300px;
+  width: 25%;
+}
+
+.image10 {
+  background: rgb(63, 75, 192);
+  background-image: url("./images/selected/10.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image11 {
+  background: rgb(115, 147, 88);
+  background-image: url("./images/selected/11.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image12 {
+  background: rgb(131, 18, 148);
+  background-image: url("./images/selected/12.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image13 {
+  background: rgb(255, 255, 255);
+  background-image: url("./images/selected/13.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image14 {
+  background: rgb(47, 136, 181);
+  background-image: url("./images/selected/14.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+.image15 {
+  background: rgb(255, 0, 0);
+  background-image: url("./images/selected/monster01.png");
+  background-size: cover;
+  /* background-position: center; */
+  height: 300px;
+  width: 25%;
+}
+.image16 {
+  background: rgb(4, 159, 176);
+  background-image: url("./images/selected/monster02.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 25%;
+}
+
+.dragon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 40px;
+  bottom: -490px;
+  z-index: 10;
+}
+#draw1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 220px;
+  bottom: -480px;
+  z-index: 10;
+  stroke: #ffd000;
+  stroke-width: 30px;
+  fill: transparent;
+  animation: animate 3s linear infinite;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+#draw2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 220px;
+  bottom: -480px;
+  z-index: 10;
+  stroke: #ffd000;
+  stroke-width: 30px;
+  fill: transparent;
+  animation: animate 3s linear infinite;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+#draw3 {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  right: 200px;
+  bottom: -475px;
+  z-index: 10;
+  stroke: #ffd000;
+  stroke-width: 20px;
+  fill: transparent;
+  animation: animate 2s linear infinite;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
