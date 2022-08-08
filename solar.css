@@ -576,7 +576,7 @@ body {
   transform-origin: 52% 60%;
 }
 .rocket-img {
-  height: 50px;
+  height: 80px;
   width: 50px;
   transform: translate(750%, 50%) rotate(-50deg);
   margin-left: -3%;
