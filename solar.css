@@ -542,7 +542,7 @@ body {
   position: absolute;
   z-index: 999;
 }
-.solar-syst div:not(.sun, .rocket) {
+.solar-syst div:not(.sun, .rocket, .planet1, .planet2, .planet3) {
   border: 1px solid rgba(102, 166, 229, 0.2);
 }
 .solar-syst div:not(.sun):before {
@@ -584,35 +584,86 @@ body {
 .monster {
   width: 100px;
 }
-.sun {
-  /* background: radial-gradient(
-    ellipse at center,
-    #ffd000 1%,
-    #f9b700 39%,
-    #f9b700 39%,
-    #e06317 100%
-  ); */
-  background-image: url(https://res.cloudinary.com/antonjs/image/upload/v1654903258/sun_ppvkua.png);
-  height: 40px;
-  width: 40px;
-  margin-top: -20px;
-  margin-left: -20px;
-  background-clip: padding-box;
-  border: 0 !important;
-  background-position: -5px -48px;
-  background-size: 115%;
-  /* box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.4),
-    0 0 22px 11px rgba(255, 203, 0, 0.13); */
+.planet1 {
+  height: 115px;
+  width: 115px;
+  margin-top: -57.5px;
+  margin-left: -57.5px;
+  -webkit-animation: orb 12.1867343561s linear infinite;
+  animation: orb 12.1867343561s linear infinite;
 }
 
+.planet1-img {
+  width:20px;
+  height:20px;
+  z-index: 100;
+  rotate: 190deg;
+ 
+}
+
+.planet2 {
+  height: 150px;
+  width: 150px;
+  margin-top: -75px;
+  margin-left: -75px;
+  -webkit-animation: orb 18.4555338265s linear infinite;
+  animation: orb 18.4555338265s linear infinite;
+}
+
+
+.planet2-img {
+  width:30px;
+  height:30px;
+  z-index: 100;
+  rotate: 190deg;
+ 
+}
+.planet2-img:hover{
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease;
+}
+
+.planet3 {
+  height: 330px;
+  width:330px;
+  margin-top: -165px;
+  margin-left: -165px;
+  -webkit-animation: orb 56.4261314589s linear infinite;
+  animation: orb 56.4261314589s linear infinite;
+}
+
+.planet3-img {
+  width: 50px;
+  height:50px;
+  z-index: 100;
+  rotate: 180deg;
+}
+.planet3-img:hover{
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease;
+}
+
+.sun-img {
+  width: 50px;
+  height:50px;
+  z-index: 100;
+}
+.sun-img:hover {
+  transform: scale(1.9);
+  transition: transform 0.5s ease;
+}
+.sun {
+  margin-top: -25px;
+  margin-left: -25px;
+  -webkit-animation: orb 100s linear infinite;
+  animation: orb 100s linear infinite;
+}
+
+
 .sun-shine {
-  margin-top: -5px;
-  margin-left: -8px;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  box-shadow: 0 0 10px 15px rgba(255, 107, 0, 0.4),
-    0 0 22px 11px rgba(255, 203, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 30px 15px rgba(255, 203, 0, 1);
 }
 
 .mercury {
